@@ -1,0 +1,75 @@
+/*
+    CREATE USER HOTEL IDENTIFIED BY HOTEL;
+    GRANT ALL PRIVILEGES TO HOTEL;
+*/
+
+
+/*
+    TABLA DONDE ESTARA LA INFORMACION DEL TIPO DE HABITACION
+*/
+CREATE TABLE TIPO_HABITACION (
+    ID_TIPO_HAB                 NUMBER,
+    NOMBRE_TIPO_HAB             VARCHAR2(10),
+    PRIMARY KEY (ID_TIPO_HAB)
+);
+
+/*
+    TABLA DONDE ESTARA LA INFORMACION DE LAS HABITACIONES
+*/
+CREATE TABLE HABITACION (
+    ID_HAB                      NUMBER,
+    NOMBRE_HAB                  VARCHAR2(10),
+    NUMERO_CAMAS                NUMBER,
+    DESCRIPCION_HAB             VARCHAR2(4000),
+    FK_ID_TIPO_HAB              NUMBER,
+    PRIMARY KEY (ID_HAB),
+    FOREIGN KEY (FK_ID_TIPO_HAB) REFERENCES TIPO_HABITACION(ID_TIPO_HAB)
+);
+
+
+CREATE TABLE CLIENTE (
+    +
+);
+
+
+CREATE TABLE ALQUILER_HABITACION (
+    ID_ALQ_HAB                  NUMBER,
+    PRECIO_ALQ_HAB              NUMBER,
+    FECHA_ENTRADA               DATE,
+    FECHA_SALIDA                DATE,
+    OBSERVACION_ALQ_HAB         VARCHAR2(4000),
+    
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

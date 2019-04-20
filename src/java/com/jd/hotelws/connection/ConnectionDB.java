@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.jd.hotelws.connection;
 
 import java.sql.Connection;
@@ -29,7 +24,6 @@ public class ConnectionDB {
             String password = "HOTEL";
             connection = DriverManager.getConnection(dataBase, user, password);
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("Error al conectar a la base de datos");
             e.printStackTrace();
         }
         return connection;

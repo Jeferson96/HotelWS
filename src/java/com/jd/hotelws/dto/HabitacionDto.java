@@ -10,6 +10,7 @@ public class HabitacionDto {
     private String nombreHab;
     private Integer numeroCamas;
     private String descripcionHab;
+    private Integer fkIdHotel;
     private Integer fkIdTipoHab;
 
     public HabitacionDto() {
@@ -45,6 +46,14 @@ public class HabitacionDto {
 
     public void setDescripcionHab(String descripcionHab) {
         this.descripcionHab = descripcionHab;
+    }
+
+    public Integer getFkIdHotel() {
+        return fkIdHotel;
+    }
+
+    public void setFkIdHotel(Integer fkIdHotel) {
+        this.fkIdHotel = fkIdHotel;
     }
 
     public Integer getFkIdTipoHab() {

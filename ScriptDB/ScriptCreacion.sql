@@ -32,6 +32,7 @@ CREATE TABLE HABITACION (
     NOMBRE_HAB                  VARCHAR2(10),
     NUMERO_CAMAS                NUMBER,
     DESCRIPCION_HAB             VARCHAR2(4000),
+    COSTO_POR_DIA               NUMBER,
     FK_ID_HOTEL                 NUMBER,
     FK_ID_TIPO_HAB              NUMBER,
     PRIMARY KEY (ID_HAB),

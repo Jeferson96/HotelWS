@@ -11,7 +11,9 @@ public class ResponseHotel {
     private String tipoHab;
     private Integer numeroCamas;
     private String descripcionHab;
-    private Integer precioAlqHab;
+    private Integer precioAlqHabXDia;
+    private Integer precioTotalAlquiler;
+    private String estado;
 
     public String getNombreHotel() {
         return nombreHotel;
@@ -53,12 +55,28 @@ public class ResponseHotel {
         this.descripcionHab = descripcionHab;
     }
 
-    public Integer getPrecioAlqHab() {
-        return precioAlqHab;
+    public Integer getPrecioAlqHabXDia() {
+        return precioAlqHabXDia;
     }
 
-    public void setPrecioAlqHab(Integer precioAlqHab) {
-        this.precioAlqHab = precioAlqHab;
+    public void setPrecioAlqHabXDia(Integer precioAlqHabXDia) {
+        this.precioAlqHabXDia = precioAlqHabXDia;
+    }
+
+    public Integer getPrecioTotalAlquiler() {
+        return precioTotalAlquiler;
+    }
+
+    public void setPrecioTotalAlquiler(Integer precioTotalAlquiler) {
+        this.precioTotalAlquiler = precioTotalAlquiler;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
 }
